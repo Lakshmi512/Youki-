@@ -78,8 +78,6 @@ None
 ```bash
 source $HOME/.cargo/env 
 
-export Path="HOME/.cargo/bin:$Path"
-
 source ~/.bashrc # Apply the changes immediately to ".bashrc" file for current terminal sessions
 ```
 #### Need for it
@@ -379,7 +377,7 @@ None
 #### Command
 
 ```bash
-sudo systemctl status docker
+sudo cp ~/youki/youki /usr/local/bin/ 
 ```
 #### Need for it
 
@@ -473,3 +471,10 @@ This will verify that the recently made container is using Youki as its runtime.
 #### Error appeared
 
 None
+
+
+## Reason and its Growth
+
+Youki is a great alternative to traditional container runtimes(i.e., runc), as it is built using Rust (Modern programming language) known for its safety and fast performance with low memory usage compared to runc, as is still in the developing stage. 
+Runc has been the default runtime for Docker and containerd for years, making it handy for container setups. 
+As we see [Benchmark Example](https://github.com/user-attachments/assets/8c0d8e4d-4441-43d6-b407-f47def87ffea)(i.e., at the "Motivation" section) comparing Youki, runc, and another runtime, crun, shows Youki performing operations in 111.5ms, while runc takes 224.6ms. This portrays that Youki is roughly 50% faster in specific tasks.

@@ -334,7 +334,7 @@ None
 ```
 #### Need for it
 
-This will set Youki as the default container runtime for the Docker(i.e., original runc).
+This will set Youki as the default container runtime for the Docker(i.e., originally runc).
 
 #### Error appeared
 
